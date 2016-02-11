@@ -26,5 +26,24 @@ namespace LoginAndPasswordFun
             //Prorgam dedicated to building login and password capability within a WPF application
             //Blah
         }
+
+        private void logInBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (!usernameTb.Text.Equals("") && !passwordBoxPB.Password.Equals(""))
+            {
+                if (usernameTb.Text.Equals("1") && passwordBoxPB.Password.Equals("1"))
+                {
+                    testImage.Visibility = Visibility.Visible;
+                    logInBtn.Visibility = Visibility.Collapsed;
+                    logOutBtn.Visibility = Visibility.Visible;
+                }
+                else
+
+                    MessageBox.Show("Wrong Password");
+            }
+            else
+                MessageBox.Show("Wrong Info");
+            }
+        }
     }
-}
+
