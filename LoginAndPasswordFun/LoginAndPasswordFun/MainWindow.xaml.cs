@@ -35,7 +35,7 @@ namespace LoginAndPasswordFun
                 {
                     testImage.Visibility = Visibility.Visible;
                     logInBtn.Visibility = Visibility.Collapsed;
-                    logOutBtn.Visibility = Visibility.Visible;
+                    logOutBtn.Visibility = Visibility.Visible; // Need to set up visablity ish
                 }
                 else
 
