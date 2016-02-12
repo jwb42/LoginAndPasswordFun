@@ -31,9 +31,9 @@ namespace LoginAndPasswordFun
         {
             if (!usernameTb.Text.Equals("") && !passwordBoxPB.Password.Equals(""))
             {
-                if (usernameTb.Text.Equals("1") && passwordBoxPB.Password.Equals("1"))
+                if (usernameTb.Text.Equals("admin") && passwordBoxPB.Password.Equals("password"))
                 {
-                    testImage.Visibility = Visibility.Visible;
+                    workingTB.Visibility = Visibility.Visible;
                     logInBtn.Visibility = Visibility.Collapsed;
                     logOutBtn.Visibility = Visibility.Visible; // Need to set up visablity ish
                 }

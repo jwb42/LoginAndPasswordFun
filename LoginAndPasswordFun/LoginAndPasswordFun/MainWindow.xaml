@@ -7,12 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="439.362" Width="641.489">
     <Grid>
-        <TextBox x:Name="usernameTb" HorizontalAlignment="Left" Height="23" Margin="191,116,0,0" TextWrapping="Wrap" Text="UserName" VerticalAlignment="Top" Width="120" TextChanged="usernameTb_TextChanged"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="143,38,0,0" TextWrapping="Wrap" Text="User LogIn Example" VerticalAlignment="Top" Height="30" Width="238" FontSize="26.667"/>
-        <PasswordBox x:Name="passwordBoxPB" HorizontalAlignment="Left" Margin="191,163,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="usernameTb" HorizontalAlignment="Left" Height="23" Margin="220,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="titleTB" HorizontalAlignment="Left" Margin="143,38,0,0" TextWrapping="Wrap" Text="Auth Ex" VerticalAlignment="Top" Height="30" Width="238" FontSize="26.667"/>
+        <PasswordBox x:Name="passwordBoxPB" HorizontalAlignment="Left" Margin="220,153,0,0" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="logInBtn" Content="LogIn" HorizontalAlignment="Left" Margin="143,200,0,0" VerticalAlignment="Top" Width="75" Click="logInBtn_Click"/>
         <Button x:Name="logOutBtn" Content="LogOut" HorizontalAlignment="Left" Margin="274,200,0,0" VerticalAlignment="Top" Width="75"/>
-        <Image x:Name="testImage" Margin="112,270,252,40" Source="12321312414.jpg" Stretch="Fill"/>
+        <TextBlock x:Name="usrNameTxtBlock" HorizontalAlignment="Left" Margin="112,108,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top" Height="23" Width="86"/>
+        <TextBlock x:Name="passWdTb" HorizontalAlignment="Left" Margin="112,153,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Height="18" Width="60"/>
+        <TextBlock x:Name="workingTB" Visibility="Hidden" HorizontalAlignment="Left" Margin="122,284,0,0" TextWrapping="Wrap" Text="Logged in" VerticalAlignment="Top" Height="44" Width="328"/>
 
     </Grid>
 </Window>
